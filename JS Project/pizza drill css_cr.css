@@ -1,0 +1,171 @@
+body {
+	background-color: #fff;
+	background-image: url("the works zombie pizza.jpg");
+	background-repeat: repeat;
+	background-attachment: fixed;
+	background-position: center;
+	font-family: 'Creepster', cursive, sans-serif;
+	opacity: .9;
+}
+
+#menuBG {
+	margin: 0% auto;
+	width: 650px;
+	padding: 1px 0px;
+	opacity: 1;
+}
+
+#menuBG>h1 {
+	font-size: 60px;
+	color: #04ad19;
+	text-shadow:0px 5px 20px #ff0000,4px -3px 0px #d96015;
+	margin: 2%;
+	text-align: center;
+}
+
+#menuBG>h5 {
+	font-size: 25px;
+	color: #04ad19;
+	text-shadow:0px 5px 5px #ff0000,4px -3px 0px #d96015;
+	margin: 2%;
+	text-align: center;
+}
+
+#frmMenu {
+	margin: 5% auto;
+	width: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.menu { 
+	flex: 1 175px;
+	margin: 2%;
+	min-width: 0;
+	border: 2px solid #000;
+	-webkit-box-shadow:0px 0px 5px 5px #6f0b0b ;
+	-moz-box-shadow:0px 0px 5px 5px #6f0b0b ;
+	box-shadow:0px 0px 5px 5px #6f0b0b; 
+	padding: 0 0 10px 0;
+	background-color: #fff;
+}
+
+.menu>H3 {
+	font-size: 20px;
+	padding: 0 0 0 70px;
+	margin: 0 auto;
+	background-color: #04ad19;
+	text-shadow:0px 1px 1px #ff0000;
+	text-align: left;
+}
+
+.button {
+	cursor: pointer;
+	color: #e98c13; 
+	text-shadow:0px 5px 5px #ff0000;
+	width: 100%;
+	display: block;
+	margin: 1% auto;
+	padding: .1px 0 .1px 0px;
+	background-color: #000;
+	box-shadow: 0 0 0 2px rgba(255,255,255, .8);
+	transition-property: transform background, box-shadow, color;
+	transition-duration: .3s, .5s, .2s;
+	transition-timing-function: eas-in-out;
+}
+
+.button>p {
+	text-align: center;
+	font-family: 'Creepster', cursive, sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.button:hover {
+	font-family: 'Creepster', cursive, sans-serif;
+	color: #000;
+	background-color: #04ad19;
+}
+
+.button:active {
+  transform: translateY(4px);
+}
+
+.controls {
+	display: flex;
+    flex-direction: columns;
+    justify-content: space-between;
+	margin: 0 auto;
+	width: 550px;
+}
+
+.controls>.button {
+	flex: 1 150px;
+}
+
+#cart {
+	opacity: 0;
+	margin: 15px auto;
+	width: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+	background-color: #fff;
+	border: 2px solid #000;
+	-webkit-box-shadow:0px 0px 5px 5px #6f0b0b ;
+	-moz-box-shadow:0px 0px 5px 5px #6f0b0b ;
+	box-shadow:0px 0px 5px 5px #6f0b0b;
+}
+
+#title1 {
+	color: #000;
+	flex: 1 250px;
+	height: 50px;
+	width: 250px;
+	padding: 0 0 0px 10px;
+	background-color: #04ad19;
+	text-shadow: 0px 5px 5px #ff0000,4px -3px 0px #d96015;
+}
+
+#title2 {
+	color: #000;
+	flex: 1 250px;
+	height: 50px;
+	width: 250px;
+	padding: 0 0 0px 10px;
+	background-color: #04ad19;
+	text-shadow: 0px 5px 5px #ff0000,4px -3px 0px #d96015;
+}
+
+#showText1 {
+	flex: 1 250px;
+	padding: 1px 0 10px 10px;
+	width: 150px;
+}
+
+#showText2 {
+	flex: 1 250px;
+	padding: 1px 0 10px 10px;
+	width: 250px;
+}
+
+#totalPrice1 {
+	font-size: 20px;
+	flex: 1 250px;
+	padding: 0 0 1px 10px;
+	width: 250px;
+}
+
+#totalPrice2 {
+	font-size: 20px;
+	flex: 1 250px;
+	font-weight: bold;
+	padding: 20px 0 1px 10px;
+	width: 250px;
+}
+

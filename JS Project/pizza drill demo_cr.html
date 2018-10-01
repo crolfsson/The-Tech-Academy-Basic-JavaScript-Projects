@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Killer Zombie Pizza Drill Demo</title>
+		<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+		<meta content="width=device-width,initial-scale=1.0" name="viewport">
+		<link rel="stylesheet" type="text/css" href="pizza drill css_cr.css">
+		<link href="https://fonts.googleapis.com/css?family=Creepster" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+	</head>
+	<body class="body">
+			<div id="menuBG">
+				<h1>Killer Zombie Pizza</h1>
+				<h5>The pizza of choice for the Zombie Apocolypse!</h5>	
+				<form id="frmMenu">
+					<div class="menu">
+						<h3>Size Matters</h3>
+						<input class="size" type="radio" name="Size" value="Rotter Personal Pizza">Rotter Personal Pizza<br>
+						<input class="size" type="radio" name="Size" value="Creeper Medium Pizza">Floater Medium Pizza<br>
+						<input class="size" type="radio" name="Size" value="Lurker Large Pizza">Lurker Large Pizza<br>
+						<input class="size" type="radio" name="Size" value="Skin Eater Extra Large Pizza">Skin Eater Extra Large Pizza<br>
+					</div>
+					<div class="menu">
+						<h3>Creeper Crust</h3>
+						<input class="crust" type="radio" name="Crust" value="Petrified Plain">Petrified Plain<br>
+						<input class="crust" type="radio" name="Crust" value="Ghoulish Garlic Butter">Ghoulish Garlic Butter<br>
+						<input class="crust" type="radio" name="Crust" value="Crawler Cheese Stuffed">Crawler Cheese Stuffed<br> 
+						<input class="crust" type="radio" name="Crust" value="Dead Head Spicy">Dead Head Spicy<br>
+						<input class="crust" type="radio" name="Crust" value="Z House Special">Z House Special<br>
+					</div>
+					<div class="menu">
+						<h3>Zombie Sauce</h3>
+						<input class="sauce" type="radio" name="Sauce" value="Bloody Marinara">Bloody Marinara<br>
+						<input class="sauce" type="radio" name="Sauce" value="Fatty Cellulose White">Fatty Cellulose White<br>
+						<input class="sauce" type="radio" name="Sauce" value="Bone Marrow BBQ">Bone Marrow BBQ<br> 
+						<input class="sauce" type="radio" name="Sauce" value="No Sauce">No Sauce<br>
+					</div>
+					<div class="menu">
+						<h3>Zombie Cheese</h3>
+						<input class="cheese" type="radio" name="Cheese" value="Regular Zombie Cheese">Regular Zombie Cheese<br>
+						<input class="cheese" type="radio" name="Cheese" value="Extra Zombie Cheese">Extra Zombie Cheese<br>
+						<input class="cheese" type="radio" name="Cheese" value="NoZombie Cheese">No Zombie Cheese <br> 
+					</div>
+					<div class="menu">
+						<h3>Outer Meats</h3>
+						<input class="outermeat" type="checkbox" name="Outermeat" value="Fingers">Fingers<br>
+						<input class="outermeat" type="checkbox" name="Outermeat" value="Toes">Toes<br>
+						<input class="outermeat" type="checkbox" name="Outermeat" value="Ears">Ears<br> 
+						<input class="outermeat" type="checkbox" name="Outermeat" value="Nose">Nose<br>
+						<input class="outermeat" type="checkbox" name="Outermeat" value="Thigh Nugs">Thigh Nugs<br>
+						<input class="outermeat" type="checkbox" name="Outermeat" value="Rump Bits">Rump Bits<br>
+					</div>
+					<div class="menu">
+						<h3>Inner Meats</h3>
+						<input class="innermeat" type="checkbox" name="Innermeat" value="Brains">Brains<br>
+						<input class="innermeat" type="checkbox" name="Innermeat" value="Eyeballs">Eyeballs<br>
+						<input class="innermeat" type="checkbox" name="Innermeat" value="Tongue">Tongue<br> 
+						<input class="innermeat" type="checkbox" name="Innermeat" value="Kidneys">Kidneys<br>
+						<input class="innermeat" type="checkbox" name="Innermeat" value="Liver">Liver<br>
+						<input class="innermeat" type="checkbox" name="Innermeat" value="Heart">Heart<br>
+					</div>
+					<div class="controls">
+						<div class="button" type="button" onclick="getReceipt()">
+							<p>Place Order</p>
+						</div>
+						<div class="button" type="button" onclick="clearAll()">
+							<p>Cancel</p>
+						</div>
+						
+						<!-- Trigger Button Modal -->
+						<div class="button" type="button">
+							<p><a href="#ex1" rel="modal:open">Submit</a></p>
+						</div>
+						<!-- /Trigger Button Modal -->
+						
+						<!-- Modal -->						
+						<div id="ex1" class="modal">
+						  <p>Thanks for your order.</p>  
+						  <p>Your ghoulish cravings will be satisfied within 15 to 20 minutes.</p>  
+						  <p>Creep you then!</p>
+						  <a href="#" rel="modal:close">Close</a>
+						</div>
+						<!-- /Modal -->
+					</div>
+					<div id="cart">
+						<div id="title1">
+							<h3>Your Zombie Pizza Includes:</h3>
+						</div>
+						<div id="title2">
+							<h3>Subtotal:</h3>
+						</div>
+						<div id="showText1"></div>
+						<div id="showText2"></div>
+						<div id="totalPrice1">
+							<h3>Total Price:</h3>
+						</div>
+						<div id="totalPrice2"></div>
+					</div>
+		<!-- Script -->
+		<script src="final_drill_basic.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+		<script type="text/javascript" src="./pizza drill js_cr.js"></script>
+		<!-- /Script -->
+	</body>
+</html>
